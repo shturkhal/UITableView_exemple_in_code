@@ -9,9 +9,6 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
-    
-   
-
     var myTableView = UITableView()
     let identifier = "myCell"
     var array = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
@@ -20,9 +17,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         createTable()
-      
-       
-        
     }
 
 

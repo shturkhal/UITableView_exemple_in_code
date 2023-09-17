@@ -8,18 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-    
+ //MARK: Properties
     var myTableView = UITableView()
     let identifier = "myCell"
     var array = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createTable()
     }
 
-
+    //MARK: Functions
     func createTable() {
         self.myTableView = UITableView(frame: view.bounds, style: .plain)
         self.myTableView.backgroundColor = UIColor.lightGray
@@ -67,7 +66,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
 //        default:
 //            break
 //        }
-        
         
         return cell
     }
